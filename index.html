@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jin Huang — Software Engineer</title>
+  <meta name="description" content="Jin Huang — EECS student at UC Berkeley. Software engineer with experience in full-stack development and machine learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💠</text></svg>" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">Jin Huang</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero-kicker reveal">Hi, my name is</p>
+        <h1 class="hero-title reveal">Jin Huang.</h1>
+        <h2 class="hero-subtitle reveal">I build full-stack systems &amp; machine learning pipelines.</h2>
+        <p class="hero-blurb reveal">
+          I'm an EECS student at <strong>UC Berkeley</strong> (GPA 4.0) and a software engineer
+          who has shipped production SaaS platforms, payment integrations, and ML inference
+          pipelines. Currently a Software Engineer Intern at <strong>AstraBreeze, Inc.</strong>
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#experience">See my work</a>
+          <a class="btn btn-ghost" href="mailto:jingyi777@berkeley.edu">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a software engineer based in Berkeley, CA, pursuing a B.S. in Electrical
+              Engineering and Computer Science at UC Berkeley. Before transferring, I earned an
+              Associate of Science in Computer Science at De Anza College — with a 4.0 GPA at both.
+            </p>
+            <p>
+              My experience spans both sides of the stack and beyond: building subscription
+              billing systems with Stripe, designing multi-tenant databases with row-level
+              security, scaling web apps to 10,000 concurrent sessions with Redis, and training
+              GANs that turn photos into Chinese ink-wash paintings.
+            </p>
+            <p>
+              I care about systems that are correct under concurrency, fast under load, and
+              simple to maintain. Recently I've been working with:
+            </p>
+            <ul class="tech-list">
+              <li>TypeScript &amp; React</li>
+              <li>Python &amp; Django</li>
+              <li>PostgreSQL &amp; Redis</li>
+              <li>PyTorch</li>
+              <li>Cloudflare Workers</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <aside class="about-card reveal">
+            <div class="about-card-item">
+              <span class="about-card-label">Location</span>
+              <span>Berkeley, CA</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-label">Education</span>
+              <span>EECS @ UC Berkeley</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-label">GPA</span>
+              <span>4.0 / 4.0</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-label">Currently</span>
+              <span>SWE Intern @ AstraBreeze</span>
+            </div>
+            <div class="about-card-item">
+              <span class="about-card-label">Award</span>
+              <span>Winner, Foothill × Google Case Competition 2024</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">02.</span> Experience</h2>
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2026 — Present</span>
+              <span class="timeline-loc">New York, NY (Remote)</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Engineer Intern <span class="at">@ AstraBreeze, Inc.</span></h3>
+              <ul>
+                <li>Designed and built a full-stack tiered subscription framework for an autofill SaaS tool, with gated React UI components and API-key authentication on the backend.</li>
+                <li>Built a subscription service with license/seat/trial tables and idempotent Stripe webhook handlers to process third-party payments and sync user status.</li>
+                <li>Reduced latency by 50ms by enabling client connections via a REST API POST endpoint over SSE.</li>
+                <li>Deployed the web app using AppKit and a TypeScript Cloudflare Workers streaming proxy.</li>
+              </ul>
+              <div class="tags">
+                <span>React</span><span>TypeScript</span><span>Stripe</span><span>Cloudflare Workers</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 2025 — Mar 2026</span>
+              <span class="timeline-loc">Berkeley, CA</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Engineer <span class="at">@ ES³ Labs, Inc.</span></h3>
+              <ul>
+                <li>Built an internal admin platform and public website with React.js and Node.js serving 1,000+ active users, supporting up to 10,000 concurrent sessions via a TTL + LRU eviction cache with Redis.</li>
+                <li>Implemented concurrency control for CRUD operations using Django REST APIs with idempotency keys and optimistic concurrency (row versions), so concurrent updates can't silently overwrite each other.</li>
+                <li>Designed RBAC with roles decoupled from permission sets, securing 200+ internal accounts with OAuth and rotating access/refresh JWTs stored in a dedicated sessions table.</li>
+              </ul>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>Django</span><span>Redis</span><span>OAuth / JWT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2024 — Sep 2024</span>
+              <span class="timeline-loc">Shanghai, China</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Machine Learning Intern <span class="at">@ Fudan University</span></h3>
+              <ul>
+                <li>Built a PyTorch inference pipeline that turns a user photo into a Chinese ink-wash painting, wrapping preprocessing and the GAN forward pass behind a single run path.</li>
+                <li>Engineered preprocessing and augmentation over 5,000+ images, improving output fidelity by 20% (FID).</li>
+                <li>Cut training overhead 30% through hyperparameter tuning and gradient penalty application.</li>
+              </ul>
+              <div class="tags">
+                <span>Python</span><span>PyTorch</span><span>GANs</span><span>Computer Vision</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">Mar 2024 — Sep 2024</span>
+              <span class="timeline-loc">Mountain View, CA</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Frontend Developer Intern <span class="at">@ Foothill College</span></h3>
+              <ul>
+                <li>Built a JavaScript course-site application that keeps assignment, rubric, and feedback views in sync without full reloads, using a client store with pub/sub.</li>
+                <li>Improved page load speed with priority-tiered loading via Fetch JSON APIs and EventSource (SSE) for instructor announcements.</li>
+                <li>Achieved cross-browser compatibility from 375px to 1440px by replacing a jQuery + Bootstrap 3 bundle with CSS Grid/Flexbox and native ES modules.</li>
+              </ul>
+              <div class="tags">
+                <span>JavaScript (ES6+)</span><span>CSS Grid</span><span>SSE</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <span class="timeline-date">Dec 2023 — Mar 2024</span>
+              <span class="timeline-loc">Cupertino, CA</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Research Assistant <span class="at">@ De Anza Computational Neuroscience Club</span></h3>
+              <ul>
+                <li>Engineered a TensorFlow binary classifier for EEG decoding to advance non-invasive brain-computer interface research.</li>
+                <li>Developed a custom MATLAB visualization suite transforming raw neural data into topographic maps.</li>
+                <li>Streamlined Python neural-data analysis pipelines, reducing processing latency by 30%.</li>
+              </ul>
+              <div class="tags">
+                <span>TensorFlow</span><span>MATLAB</span><span>Signal Processing</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">03.</span> Projects &amp; Highlights</h2>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-icon">🎫</span>
+              <span class="project-date">Oct — Dec 2025</span>
+            </div>
+            <h3>TicketNest</h3>
+            <p>
+              Multi-tenant ticketing platform with row-level security — every query is scoped to
+              <code>org_id</code> in PostgreSQL so one org can never read another's tickets. List pages
+              use keyset pagination under load, and outbound Slack/email updates flow through an
+              outbox table with a Redis retry queue and exponential backoff.
+            </p>
+            <div class="tags">
+              <span>React.js</span><span>Django REST</span><span>PostgreSQL</span><span>Redis</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-icon">🏆</span>
+              <span class="project-date">Oct 2024</span>
+            </div>
+            <h3>Foothill × Google Case Competition — Winner</h3>
+            <p>
+              Built the winning AI-driven diagnostic solution identifying early Alzheimer's
+              indicators from keystroke patterns, using LSTM and Random Forest models with
+              efficient data structures for high-dimensional keystroke sequences.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>LSTM</span><span>Random Forest</span><span>Data Science</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-icon">🪐</span>
+              <span class="project-date">Apr — Jun 2024</span>
+            </div>
+            <h3>Planetary Survival Simulator</h3>
+            <p>
+              Real-time planetary survival simulator modeling gravity, atmospheric pressure, and
+              thermodynamics, with modular object-oriented 3D visualizations — physics runtime
+              reduced by 30%.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>PyOpenGL</span><span>Pygame</span><span>NumPy</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-icon">⏱️</span>
+              <span class="project-date">Sep — Nov 2025</span>
+            </div>
+            <h3>Time Management App</h3>
+            <p>
+              Full-stack time management system applying heaps and priority queues for real-time
+              reminder scheduling, with multithreaded C/C++ task management coordinating
+              concurrent operations.
+            </p>
+            <div class="tags">
+              <span>C/C++</span><span>Python</span><span>Arduino</span><span>Multithreading</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">04.</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Languages</h3>
+            <div class="tags tags-lg">
+              <span>Python</span><span>TypeScript</span><span>JavaScript</span><span>Java</span>
+              <span>C/C++</span><span>SQL</span><span>Swift</span><span>R</span><span>x86 Assembly</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frameworks &amp; APIs</h3>
+            <div class="tags tags-lg">
+              <span>React.js</span><span>Node.js</span><span>Django</span><span>Express</span>
+              <span>Flask</span><span>PyTorch</span><span>TensorFlow</span><span>REST</span>
+              <span>OAuth 2.0</span><span>JWT</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Infrastructure &amp; Tools</h3>
+            <div class="tags tags-lg">
+              <span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>Git</span>
+              <span>Linux</span><span>Cloudflare Workers</span><span>Stripe</span>
+              <span>GCP</span><span>Azure</span><span>MATLAB</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Concepts</h3>
+            <div class="tags tags-lg">
+              <span>Concurrency</span><span>Multithreading</span><span>Object-Oriented Design</span>
+              <span>Data Structures &amp; Algorithms</span><span>Machine Learning</span><span>Computer Vision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">05.</span> Education</h2>
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <div class="edu-dates">Sep 2025 — Dec 2027</div>
+            <h3>University of California, Berkeley</h3>
+            <p class="edu-degree">B.S. Electrical Engineering &amp; Computer Science</p>
+            <p class="edu-gpa">GPA: 4.0</p>
+          </article>
+          <article class="edu-card reveal">
+            <div class="edu-dates">Sep 2023 — May 2025</div>
+            <h3>De Anza College</h3>
+            <p class="edu-degree">A.S. Computer Science</p>
+            <p class="edu-gpa">GPA: 4.0</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container narrow">
+        <h2 class="section-title centered reveal"><span class="section-num">06.</span> Get In Touch</h2>
+        <p class="contact-blurb reveal">
+          I'm open to software engineering and machine learning opportunities.
+          Whether you have a role in mind, a question, or just want to say hi —
+          my inbox is always open.
+        </p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary btn-lg" href="mailto:jingyi777@berkeley.edu">Say Hello</a>
+          <a class="btn btn-ghost btn-lg" href="https://linkedin.com/in/jinhuang04" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jin Huang · Built with plain HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
